@@ -1,0 +1,156 @@
+body {
+  font-family: "Indie Flower", sans-serif;
+  background-color: lightgray;
+  width: 100%;
+}
+h3 {
+  font-size: 3em;
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto 0 auto;
+}
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #666666;
+  align-items: center;
+  width: 1260px;
+  padding: 2em;
+}
+.postIt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 200px;
+  box-shadow: 0px 3px 16px 2px #000000f0;
+  margin: 2em 2em;
+  transition: all 0.3s;
+}
+.violet {
+  transform: rotate(-10deg);
+  background: linear-gradient(#c8c8f6, #b8b7d8, #8b8c9b);
+}
+.green {
+  transform: rotate(10deg);
+  background: linear-gradient(#c3f8c3, #bce2bd, #9eb5a1);
+}
+.lightBlue {
+  transform: rotate(-8deg);
+  background: linear-gradient(#60d4d4, #57b1b1, #486b6b);
+}
+.yellow {
+  transform: rotate(5deg);
+  background: linear-gradient(#f9fac8, #ecedb9, #bdbda3);
+}
+
+.box1 {
+  animation: fly1 2s ease;
+}
+.box2 {
+  animation: fly2 1.5s ease ;
+}
+.box3 {
+  animation: fly3 2s ease ;
+}
+.box4 {
+  animation: fly4 2.5s ease;
+}
+.box5 {
+  animation: fly5 3s ease;
+}
+.box6 {
+  animation: fly6 3.5s ease; 
+}
+.box7 {
+  animation: fly7 4s ease;
+}
+.box8 {
+  animation: fly8 3s ease;
+}
+
+.postIt:hover {
+  transform: rotate(0deg) scale(1.25);
+}
+
+@keyframes fly1 {
+  0% {
+    transform: translate(1600px, 500px) rotate(-60deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-10deg);
+   ;
+  }
+}
+
+@keyframes fly2 {
+  0% {
+    transform: translate(800px, 900px) rotate(+70deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(10deg);
+   ;
+  }
+}
+@keyframes fly3 {
+  0% {
+    transform: translate(-50px, 900px) rotate(-90deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(5deg);
+   ;
+  }
+  }
+
+@keyframes fly4 {
+  0% {
+    transform: translate(900px, -680px) rotate(10deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(10deg);
+   ;
+  }
+}
+@keyframes fly5 {
+  0% {
+    transform: translate(-500px, 600px) rotate(-60deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-8deg);
+   ;
+  }
+  }
+
+@keyframes fly6 {
+  0% {
+    transform: translate(225px, 1200px) rotate(-60deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-10deg);
+   ;
+  }
+}
+@keyframes fly7 {
+  0% {
+    transform: translate(50px, -1300px) rotate(-60deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(5deg);
+   ;
+  }
+}
+@keyframes fly8 {
+  0% {
+    transform: translate(-2000px, 600px) rotate(-60deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-8deg);
+   ;
+  }
+}
